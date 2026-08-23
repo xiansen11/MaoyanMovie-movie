@@ -1,5 +1,5 @@
 ﻿server:
-  port: 8082
+  port: 18082
 
 spring:
   application:
@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/db_movie?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
-    password: ${MYSQL_PASSWORD:change-me-in-local-environment}
+    password: ${MYSQL_PASSWORD:123456}
   cloud:
     nacos:
       discovery:
@@ -25,5 +25,5 @@ mybatis-plus:
 
 maoyan:
   jwt:
-    secret: ${JWT_SECRET:change-me-in-local-environment}
+    secret: ${JWT_SECRET:maoyan-local-jwt-secret-key-2026}
     expire-hours: 2
